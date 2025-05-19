@@ -1,4 +1,4 @@
-// context/UIContext.js
+
 import { createContext, useContext, useState } from 'react';
 
 const UIContext = createContext();

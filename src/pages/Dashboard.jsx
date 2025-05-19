@@ -11,7 +11,7 @@ const Dashboard = ({ toggleSidebar }) => {
   const [timeFrame, setTimeFrame] = useState('monthly');
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // Sample data
+
   
 
   return (

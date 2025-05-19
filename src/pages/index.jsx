@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar';
 const Layout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
-  // Close sidebar when screen size increases beyond mobile breakpoint
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
@@ -18,7 +18,6 @@ const Layout = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Close sidebar when clicking outside on mobile
   useEffect(() => {
     const handleClickOutside = (event) => {
       const target = event.target;

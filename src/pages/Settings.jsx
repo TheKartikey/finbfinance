@@ -19,7 +19,7 @@ const Settings = ({ toggleSidebar }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would save these settings to your backend
+    
     alert('Settings saved successfully!');
   };
 

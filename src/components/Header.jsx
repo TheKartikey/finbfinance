@@ -48,14 +48,14 @@ const Header = ({ user, toggleSidebar }) => {
   const dropdownRef = useRef(null);
   const savingsPercentage = Math.min(Math.round((user.currentSavings / user.monthlyGoal) * 100), 100);
 
-  // Sample notifications data
+
   const [notifications] = useState([
     { id: 1, type: 'warning', message: 'Overspending on Dining this month' },
     { id: 2, type: 'info', message: 'Salary deposit expected in 3 days' },
     { id: 3, type: 'tip', message: 'Consider transferring $200 to savings' }
   ]);
 
-  // Close dropdown when clicking outside
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
